@@ -1,0 +1,26 @@
+@import "./css-reset.css";
+/* If you will not use dark mode, please delete the following line of code and the main file */
+@import "./dark-mode.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.\? {
+  border: 2px solid red;
+}
+
+.center-x-y {
+  @apply m-0 top-2/4  left-2/4 absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center-y {
+  @apply m-0 top-2/4  absolute;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}

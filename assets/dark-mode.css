@@ -1,0 +1,14 @@
+:root {
+  --color: #181818;
+  --bg: #fafafa;
+}
+.dark {
+  --color: #fafafa;
+  --bg: #181818;
+}
+body {
+  will-change: background-color;
+  background-color: var(--bg);
+  color: var(--color);
+  transition: background-color 0.3s;
+}
